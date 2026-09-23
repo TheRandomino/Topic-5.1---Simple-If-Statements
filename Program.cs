@@ -7,7 +7,8 @@
 
             int people = 20, cats = 20, dogs = 15, age = 0;
             string dinosaur, magicWord;
-            /*
+            double freezeTemp = 0;
+            
             Console.WriteLine("People: " + people + " Dogs: " + dogs + " Cats: " + cats);
             if (people < cats)
             {
@@ -49,7 +50,7 @@
             dinosaur = Console.ReadLine();
             if (dinosaur.ToLower() == "triceratops")
                 Console.WriteLine("You are correct!");
-            */
+            
             Console.WriteLine("");
             Console.WriteLine("What's the magic word?");
             magicWord = Console.ReadLine();
@@ -76,6 +77,24 @@
             {
                 Console.WriteLine("You can do anything that is legal!");
             }
+            Console.WriteLine("");
+            
+            Console.WriteLine("What temperature does water freeze at?");
+            Console.WriteLine(Double.TryParse(Console.ReadLine(), out freezeTemp));
+            if (freezeTemp == 0)
+            {
+                Console.WriteLine("That is the freezing temperature of water in Celcius!");
+            }
+            if (freezeTemp == 32)
+            {
+                Console.WriteLine("That is the freezing temperature of water in Fahrenheit!");
+            }
+            if (freezeTemp == 273.2)
+            {
+                Console.WriteLine("That is the freezing temperature of water in Kelvin!");
+            }
+
+
 
 
 
